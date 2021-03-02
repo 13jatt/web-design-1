@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>Supreet</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+	</head>
+	<body>
+        <style>
+            *{
+                margin:0;
+            }
+            .cards{
+                width:50%;
+                margin:100px auto;
+                height: 50%;
+                position: relative;
+            }
+            .cards div{
+                width:100%;
+                height:100%;
+            }
+            .cards div img{
+                width:100%;
+                height:100%;
+            }
+            .slick-prev{
+                position:absolute;
+                z-index:100;
+                top:105%;
+                background-color: white;
+                border:none;
+                outline:none;
+                box-shadow: 0 0 5px 1px black;
+                cursor: pointer;
+            }
+            .slick-next{
+                position:absolute;
+                z-index:100;
+                top:105%;
+                right:0;
+                background-color: white;
+                border:none;
+                outline:none;
+                box-shadow: 0 0 5px 1px black;
+                cursor: pointer;
+            }
+           
+        </style>
+  
+		<div class="cards">
+			<div><img src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" /></div>
+			<div><img src="https://images.unsplash.com/photo-1612831457091-ffd909920941?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" /></div>
+			<div><img src="https://images.unsplash.com/photo-1611095567319-2f4c389168a9?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" /></div>
+		</div>
+
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-1.11.0.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(".cards").slick({
+				    arrows:true
+				});
+			});
+		</script>
+	</body>
+</html>
