@@ -1,0 +1,90 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Intra Exam</title>
+	</head>
+	<body>
+		<style>
+			* {
+				margin: 0;
+				box-sizing: border-box;
+			}
+			header {
+				background-color: skyblue;
+				padding: 20px;
+			}
+			a {
+				color: white;
+				text-decoration: none;
+				cursor: pointer;
+				padding: 10px 20px;
+				background-color: black;
+				text-decoration: none;
+				font-size: 2em;
+			}
+			.modal {
+				width: 300px;
+				padding: 20px 0;
+				left: 50%;
+				top: 50%;
+				position: absolute;
+				transform: translate(-50%, -50%) !important;
+				background-color: lightgray;
+			}
+			.cont {
+				padding: 10%;
+				position: relative;
+			}
+			.card {
+				position: relative;
+				border: 1px solid black;
+				padding: 30px;
+			}
+			.card span {
+				color: white;
+				float: right;
+				font-size: 1em;
+				background-color: black;
+				padding: 10px;
+			}
+		</style>
+		<header>
+			<nav>
+				<a
+					href=""
+					onclick="document.getElementById('mdl').style.display='block'; return false"
+					>Question 5</a
+				>
+				
+				<a
+					data-fancybox="images"
+					data-caption="My lightbox photo"
+					href="https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+					>Question 6</a
+				>
+                <a href="slick.html">Question 7</a>
+			</nav>
+		</header>
+
+		<div id="mdl" class="modal">
+			<div class="cont">
+				<div class="card">
+					<span onclick="document.getElementById('mdl').style.display='none'"
+						>&times;</span
+					>
+					<p>I'm a simple modal</p>
+				</div>
+			</div>
+		</div>
+		<!-- fancybox -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	</body>
+</html>
